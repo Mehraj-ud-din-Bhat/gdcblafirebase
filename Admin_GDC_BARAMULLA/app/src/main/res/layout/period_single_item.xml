@@ -1,0 +1,181 @@
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:padding="3dp"
+    android:background="@color/BgColor"
+    card_view:cardCornerRadius="3dp"
+    card_view:cardElevation="3dp"
+    card_view:cardUseCompatPadding="true"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/topcolor">
+            <ImageView
+                android:id="@+id/imgedit_period"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+
+                android:layout_margin="5dp"
+                tools:ignore="VectorDrawableCompat"
+                android:focusable="true"
+                android:clickable="true"
+                card_view:srcCompat="@drawable/ic_edit_black_24dp" />
+            <ImageView
+                android:id="@+id/imgedelete_period"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+
+                android:layout_toLeftOf="@+id/imgedit_period"
+                android:layout_toStartOf="@+id/imgedit_period"
+                android:layout_marginRight="10dp"
+                android:layout_margin="5dp"
+                tools:ignore="VectorDrawableCompat"
+                android:focusable="true"
+                android:clickable="true"
+                card_view:srcCompat="@drawable/ic_delete_forever_black_24dp" />
+        </RelativeLayout>
+
+        <View
+            android:id="@+id/Hlinee"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/color1"
+            />
+        <RelativeLayout
+            android:id="@+id/period_layout_view"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:background="@color/BgColor"
+
+
+
+            >
+
+            <RelativeLayout
+                android:id="@+id/RL1"
+                android:layout_width="90dp"
+                android:layout_height="wrap_content"
+                android:background="@color/BgColor">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/L_start_time"
+                    android:gravity="center"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_margin="2dp"
+                    >
+
+                    <TextView
+                        android:id="@+id/tvperiodstarttime"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/bubbler_one"
+                        android:padding="2dp"
+                        android:text="10:00 AM"
+                        android:textSize="17sp"
+                        android:textColor="@android:color/black" />
+                </LinearLayout>
+
+                <View
+                    android:id="@+id/Hline"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/topcolor"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginBottom="4dp"
+                    android:layout_below="@+id/L_start_time"
+
+                    />
+                <View
+                    android:id="@+id/Vline"
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/topcolor"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"
+
+
+                    />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@+id/Hline"
+                    android:gravity="center"
+                    android:layout_margin="2dp">
+
+                    <TextView
+                        android:id="@+id/tvperiodendtime"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="2dp"
+                        android:text="10:40 AM"
+                        android:textSize="17sp"
+                        android:fontFamily="@font/bubbler_one"
+                        android:textColor="@android:color/black" />
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_toEndOf="@+id/RL1"
+                android:layout_toRightOf="@+id/RL1">
+
+                <TextView
+                    android:id="@+id/tvperidname"
+                    android:layout_width="280dp"
+                    android:layout_height="match_parent"
+                    android:fontFamily="serif-monospace"
+                    android:gravity="center"
+                    android:padding="3dp"
+
+                    android:text="Programming In C\nLAB-21 BSC SEC: A\nMON TUE WED"
+                    android:textColor="@android:color/black"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/tvperiodno"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+
+                    android:textSize="12sp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:text="3"
+                    android:gravity="center"
+                    android:layout_centerVertical="true"
+                    android:fontFamily="@font/bubbler_one"
+                    android:textColor="@color/color1"
+                    android:background="@drawable/circle_bg_2"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginRight="8dp"
+                    />
+            </RelativeLayout>
+
+
+
+
+        </RelativeLayout>
+    </LinearLayout>
+
+
+
+
+</android.support.v7.widget.CardView>

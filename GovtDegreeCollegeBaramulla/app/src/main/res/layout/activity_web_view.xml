@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".webViewActivity"
+    android:orientation="vertical">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar_in_webview_activity"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/topcolor"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:padding="3dp"
+            >
+            <ImageButton
+                android:id="@+id/imgback_in_webview"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                app:srcCompat="@drawable/ic_chevron_left_black_24dp"
+                android:background="@drawable/circle_bg"
+                tools:ignore="VectorDrawableCompat"
+                android:focusable="true"
+                android:clickable="true"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_in_webview_toolbar"
+            android:layout_marginLeft="30dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/montserrat"
+            android:text="About College"
+            android:textColor="@color/color1"
+            android:textSize="18sp"
+            />
+    </android.support.v7.widget.Toolbar>
+
+
+
+    <WebView
+        android:id="@+id/Imgdisplay"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:contentDescription="@null"
+        android:scaleType="fitXY"/>
+
+</LinearLayout>

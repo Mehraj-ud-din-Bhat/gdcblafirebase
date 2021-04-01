@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/BgColor"
+    android:orientation="vertical"
+    >
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar_in_view_full_notice_activity"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/topcolor"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:padding="3dp"
+            >
+            <ImageButton
+                android:id="@+id/imgback_View-post_activity_toolbar"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                app:srcCompat="@drawable/ic_chevron_left_black_24dp"
+                android:background="@drawable/circle_bg"
+                tools:ignore="VectorDrawableCompat"
+                android:focusable="true"
+                android:clickable="true"/>
+
+
+        </RelativeLayout>
+
+
+        <TextView
+            android:id="@+id/tv_in_semester_toolbar"
+            android:layout_marginLeft="30dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/"
+            android:text="Journal Post"
+            android:textColor="@color/color1"
+            android:layout_alignRight="@+id/imgback_View-post_activity_toolbar"
+            android:textSize="18sp"
+            />
+    </android.support.v7.widget.Toolbar>
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbar_in_view_full_notice_activity">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/notificationr1_head"
+            android:background="@color/BgColor">
+
+
+            <TextView
+                android:id="@+id/tv_post_title_full"
+                android:layout_width="match_parent"
+                android:fontFamily="@font/montserrat"
+                android:layout_height="wrap_content"
+                android:text="Effects of Smoking \n And DisAdvantages Of Mobile Phones"
+                android:textColor="@color/skyblue"
+                android:textSize="16sp"
+                android:gravity="center"
+                android:layout_centerVertical="true"
+
+                android:layout_toLeftOf="@+id/LL_P_author"/>
+            <LinearLayout
+
+                android:id="@+id/LL_P_author"
+                android:layout_width="125dp"
+                android:layout_height="125dp"
+
+                android:orientation="vertical"
+                android:layout_centerInParent="true"
+                android:layout_alignParentRight="true">
+
+                <ImageView
+                    android:id="@+id/img_post_author"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_margin="6dp"
+                    android:layout_centerVertical="true"
+                    app:srcCompat="@drawable/ic_person_black_24dp"
+                    tools:ignore="VectorDrawableCompat"
+                    android:layout_gravity="center"
+                    android:background="@color/white_color"
+
+
+                    />
+
+                <TextView
+                    android:id="@+id/tv_post_author_details"
+                    android:layout_width="match_parent"
+
+                    android:fontFamily="@font/montserrat"
+                    android:layout_height="wrap_content"
+                    android:text="MEHRAJ UD DIN BHATjjjjjjjjjjjjjj\nBCA 5th SEMESTER\nComuter Scicence Department "
+                    android:textColor="@android:color/black"
+                    android:textSize="7sp"
+                    android:gravity="center"
+
+
+                    />
+            </LinearLayout>
+
+
+
+            <View
+                android:id="@+id/Hline"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/skyblue"
+                android:layout_below="@+id/LL_P_author"
+                android:layout_marginTop="3dp"
+
+
+                />
+
+
+
+
+        </RelativeLayout>
+
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/notificationr1_head"
+            android:layout_margin="1dp"
+
+
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/Tv_post_details"
+                    android:fontFamily="@font/montserrat"
+                    android:textSize="15sp"
+                    android:textColor="@android:color/black"
+
+                    android:padding="5dp"
+                    android:text="jdsjdjjdjjdjdjjjdjd"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+            </LinearLayout>
+        </ScrollView>
+
+    </RelativeLayout>
+
+
+</LinearLayout>

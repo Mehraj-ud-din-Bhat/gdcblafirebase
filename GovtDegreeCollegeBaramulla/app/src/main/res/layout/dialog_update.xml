@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/BgColor"
+    android:orientation="vertical"
+    android:padding="15dp">
+
+
+    <ImageView
+        android:id="@+id/imageView_updateicon"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/ic_system_update_black_24dp" />
+
+    <TextView
+        android:layout_below="@id/imageView_updateicon"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:text="Update the Application"
+                  android:fontFamily="@font/montserrat"
+                  android:gravity="center"
+                  android:textColor="#d50000"
+                  android:textSize="15dp"
+                  android:layout_marginTop="5dp"
+                  android:id="@+id/textView4" />
+
+    <TextView
+        android:id="@+id/btnupdatenow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/textView4"
+        android:layout_marginTop="20dp"
+        android:text="Update Now"
+        android:fontFamily="@font/montserrat"
+        android:textColor="@android:color/black"
+        android:background="@drawable/design_button_design_simple2"
+        android:padding="10dp"/>
+
+    <TextView
+        android:id="@+id/btnupdatelater"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textView4"
+        android:layout_marginTop="20dp"
+        android:text="Update Later"
+        android:textColor="@android:color/black"
+        android:background="@drawable/design_button_design_simple2"
+        android:padding="10dp"/>
+
+</RelativeLayout>

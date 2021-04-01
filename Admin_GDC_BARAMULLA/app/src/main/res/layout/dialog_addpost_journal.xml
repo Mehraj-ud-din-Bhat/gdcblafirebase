@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/BgColor"
+    android:orientation="vertical"
+    >
+
+
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="DIALOG ACTION NAME"
+    android:gravity="center"
+    android:textColor="@color/color1"
+    android:padding="10dp"
+    android:background="@color/skyblue"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@+id/toolbar_in_view_full_notice_activity">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/notificationr1_head"
+            android:background="@color/BgColor">
+
+
+            <EditText
+                android:id="@+id/tv_post_title_full_d"
+                android:layout_width="match_parent"
+                android:fontFamily="@font/montserrat"
+                android:layout_height="wrap_content"
+                android:hint="Enter Article Title"
+                android:textColor="@android:color/black"
+                android:textSize="12sp"
+                android:gravity="center"
+                android:textColorHint="@color/skyblue"
+                android:padding="10dp"
+                android:layout_centerVertical="true"
+                android:background="@android:drawable/editbox_background"
+                android:layout_toLeftOf="@+id/LL_P_author"/>
+
+            <EditText
+                android:id="@+id/tv_post_author_details_d"
+                android:layout_width="match_parent"
+                android:layout_below="@+id/tv_post_title_full_d"
+                android:fontFamily="@font/montserrat"
+                android:background="@android:drawable/editbox_background"
+                android:layout_height="wrap_content"
+                android:hint="Enter Author Details"
+                android:textColor="@android:color/black"
+                android:layout_marginTop="100dp"
+                android:textColorHint="@color/skyblue"
+                android:textSize="10sp"
+                android:gravity="center"
+                android:maxEms="50"
+                android:padding="10dp"
+                android:layout_toLeftOf="@+id/LL_P_author"
+
+
+                />
+            <LinearLayout
+
+                android:id="@+id/LL_P_author"
+                android:layout_width="125dp"
+                android:layout_height="125dp"
+
+                android:orientation="vertical"
+                android:layout_centerInParent="true"
+                android:layout_alignParentRight="true">
+
+                <ImageView
+                    android:id="@+id/img_post_author_d"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_margin="6dp"
+                    android:layout_centerVertical="true"
+                    app:srcCompat="@drawable/ic_person_black_24dp"
+                    tools:ignore="VectorDrawableCompat"
+                    android:padding="2dp"
+                    android:layout_gravity="center"
+
+                    android:background="@color/white_color"
+
+
+                    />
+
+
+            </LinearLayout>
+
+
+
+            <View
+                android:id="@+id/Hline"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/skyblue"
+                android:layout_below="@+id/tv_post_author_details_d"
+                android:layout_marginTop="3dp"
+
+
+                />
+
+
+
+
+        </RelativeLayout>
+
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+
+
+                    <EditText
+                        android:id="@+id/Tv_post_details_d"
+                        android:fontFamily="@font/montserrat"
+                        android:textSize="15sp"
+                        android:textColor="@android:color/black"
+                        android:gravity="center"
+                        android:padding="30dp"
+                        android:hint="Enter Article Body"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@android:drawable/editbox_background"
+                        android:layout_marginTop="20dp"
+
+                        android:textColorHint="@color/skyblue"
+                        />
+
+                    <TextView
+                        android:id="@+id/Tv_btn_submit_JPost"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="8dp"
+                        android:padding="10dp"
+                        android:text="Submit Post"
+                        android:gravity="center"
+                        android:background="@drawable/design_button_design_simple"/>
+
+
+            </LinearLayout>
+        </ScrollView>
+
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

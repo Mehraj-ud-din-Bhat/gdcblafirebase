@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/BgColor"
+    android:orientation="vertical"
+    android:gravity="center"
+    >
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:layout_margin="8dp"
+        >
+
+
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="87dp"
+            app:srcCompat="@drawable/ic_account_person" />
+
+        <EditText
+            android:id="@+id/etemail"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/etpassword"
+            android:textColor="@android:color/black"
+            android:layout_below="@+id/imageView"
+            android:layout_marginTop="47dp"
+            android:background="@android:drawable/editbox_background"
+            android:ems="10"
+            android:fontFamily="monospace"
+            android:textColorHint="@color/topcolor"
+            android:hint="Enter Admin  Email"
+            android:inputType="textEmailAddress"
+
+            android:padding="20dp" />
+
+        <TextView
+            android:id="@+id/loginiok"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/etpassword"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="24dp"
+            android:background="@drawable/ripple_button_design"
+            android:clickable="true"
+            android:focusable="true"
+            android:fontFamily="monospace"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="Log In"
+            android:textColor="@android:color/black"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/etpassword"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/etemail"
+            android:layout_centerHorizontal="true"
+            android:textColor="@android:color/black"
+            android:layout_marginTop="20dp"
+            android:background="@android:drawable/editbox_background"
+            android:ems="10"
+            android:fontFamily="monospace"
+            android:hint="Enter Admin Password"
+            android:textColorHint="@color/topcolor"
+            android:inputType="textPassword"
+            android:padding="20dp"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+
+
+
+
+
+</LinearLayout>

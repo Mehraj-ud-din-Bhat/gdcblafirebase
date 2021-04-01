@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/draw_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/BgColor"
+    android:orientation="vertical"
+    tools:openDrawer="start"
+    android:fitsSystemWindows="true"
+    tools:context="com.college.baramulla.govtdegreecollegebaramulla.Timetable_Activity">
+
+
+    <LinearLayout
+        android:id="@+id/toolbar_contatiner_linear"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbarintimetable"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@color/topcolor"
+            android:minHeight="?attr/actionBarSize"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <TextView
+                    android:id="@+id/textView_app_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="6dp"
+                    android:fontFamily="@font/montserrat"
+                    android:text="Govt Degree College Baramulla"
+                    android:textColor="@color/white_color"
+                    android:textSize="14sp" />
+
+                <ImageView
+                    android:id="@+id/imageViewlogo"
+                    android:layout_width="30dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="4dp"
+                    app:srcCompat="@drawable/logo_gdc"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginRight="20dp"
+
+                    />
+
+            </RelativeLayout>
+
+
+        </android.support.v7.widget.Toolbar>
+
+        <android.support.design.widget.TabLayout
+            android:id="@+id/tabview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/topcolor"
+            android:minHeight="?attr/actionBarSize"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+            app:tabIndicatorColor="@color/topcolor"
+            app:tabIndicatorHeight="3dp"
+            app:tabSelectedTextColor="@color/color1"
+
+
+            >
+
+        </android.support.design.widget.TabLayout>
+
+        <View
+            android:id="@+id/Hline"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/tvperiodstarttime"
+
+
+            android:background="@color/color1"
+
+            />
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/viewpager"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:background="@color/BgColor"></android.support.v4.view.ViewPager>
+    </LinearLayout>
+    <android.support.design.widget.NavigationView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+
+        android:layout_gravity="start"
+        android:fitsSystemWindows="true"
+
+        android:id="@+id/myNavigationDrawerView"
+        app:headerLayout="@layout/navigation_drawer_layout"
+        app:menu="@menu/menu_drawer"
+        />
+
+
+
+
+
+
+</android.support.v4.widget.DrawerLayout>

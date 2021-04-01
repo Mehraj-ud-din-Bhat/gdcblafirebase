@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:padding="3dp"
+    android:background="@color/BgColor"
+    card_view:cardCornerRadius="4dp"
+    card_view:cardElevation="4dp"
+    card_view:cardUseCompatPadding="true">
+    <RelativeLayout
+        android:background="@color/BgColor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:ignore="VectorDrawableCompat"
+            app:srcCompat="@drawable/ic_verified_user_black_24dp"
+            android:layout_margin="5dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:padding="5dp"
+            />
+
+        <View
+            android:id="@+id/Hline"
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:background="@color/topcolor"
+            android:layout_marginTop="140dp"
+
+
+            />
+        <ImageView
+            android:id="@+id/imge_admin_single"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            app:srcCompat="@drawable/ic_person_black_24dp"
+            tools:ignore="VectorDrawableCompat"
+            android:padding="4dp"
+            android:layout_centerHorizontal="true"
+            android:background="@color/labcolor"
+            android:layout_marginTop="80dp"
+            android:scaleType="centerCrop"
+
+
+
+            />
+
+        <TextView
+            android:id="@+id/tvv_admin_details"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imge_admin_single"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="5dp"
+            android:fontFamily="@font/montserrat"
+            android:gravity="center"
+            android:padding="6dp"
+            android:text="#"
+            android:textColor="@android:color/black"
+            android:textSize="12sp" />
+
+
+
+        <TextView
+            android:id="@+id/btn_tv_contact_admin"
+            android:layout_width="match_parent"
+
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginBottom="5dp"
+            android:padding="10dp"
+            android:fontFamily="@font/montserrat"
+            android:layout_height="wrap_content"
+            android:text="Contact Admin"
+            android:textColor="@android:color/black"
+            android:layout_below="@+id/tvv_admin_details"
+            android:textSize="13sp"
+            android:gravity="center"
+            android:background="@drawable/design_button_design_simple2"
+            />
+
+
+    </RelativeLayout>
+
+
+</android.support.v7.widget.CardView>

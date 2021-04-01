@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/BgColor"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linaer_layout_dialog_aboutApp"
+        android:background="@color/topcolor">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="This Application is Developed By\n Mehraj ud din Bhat under the supervision of Computer Science Departmet\nGovt Degree Collge Boys Baramulla"
+            android:textColor="@color/white_color"
+            android:fontFamily="@font/montserrat"
+            android:gravity="center"
+            android:layout_margin="10dp"
+            android:padding="10dp"/>
+
+    </LinearLayout>
+
+
+
+    <HorizontalScrollView
+        android:layout_below="@+id/linaer_layout_dialog_aboutApp"
+        android:layout_width="match_parent"
+        android:id="@+id/scroll_view_aboutapp"
+        android:layout_height="260dp"
+        android:layout_margin="5dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            >
+
+            <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:padding="3dp"
+                android:background="@color/BgColor"
+                card_view:cardCornerRadius="4dp"
+                card_view:cardElevation="4dp"
+                card_view:cardUseCompatPadding="true">
+                <RelativeLayout
+                    android:background="@color/BgColor"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:id="@+id/img"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        tools:ignore="VectorDrawableCompat"
+                        app:srcCompat="@drawable/ic_verified_user_black_24dp"
+                        android:layout_margin="5dp"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:padding="5dp"
+                        />
+
+                    <View
+                        android:id="@+id/Hline"
+                        android:layout_width="match_parent"
+                        android:layout_height="4dp"
+                        android:background="@color/cardview_dark_background"
+                        android:layout_marginTop="150dp"
+
+
+                        />
+                    <ImageView
+                        android:id="@+id/img_admin_single"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        app:srcCompat="@drawable/admin"
+                        android:padding="4dp"
+                        android:layout_centerHorizontal="true"
+                        android:background="@color/labcolor"
+                        android:layout_marginTop="80dp"
+                        android:scaleType="centerCrop"
+
+
+
+                        />
+
+                    <TextView
+                        android:id="@+id/tv_admin_details"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/img_admin_single"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="5dp"
+                        android:fontFamily="@font/montserrat"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:text="MEHRAJ UD DIN BHAT BCA Final Year\n  Developer | Head Admin"
+                        android:textColor="@android:color/black"
+                        android:textSize="12sp" />
+
+
+
+
+
+
+                </RelativeLayout>
+
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:padding="3dp"
+                android:background="@color/BgColor"
+                card_view:cardCornerRadius="4dp"
+                card_view:cardElevation="4dp"
+                card_view:cardUseCompatPadding="true">
+                <RelativeLayout
+                    android:background="@color/BgColor"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:id="@+id/imgg"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        tools:ignore="VectorDrawableCompat"
+                        app:srcCompat="@drawable/ic_verified_user_black_24dp"
+                        android:layout_margin="5dp"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:padding="5dp"
+                        />
+
+                    <View
+                        android:id="@+id/Hlinee"
+                        android:layout_width="match_parent"
+                        android:layout_height="4dp"
+                        android:background="@color/cardview_dark_background"
+                        android:layout_marginTop="150dp"
+
+
+                        />
+                    <ImageView
+                        android:id="@+id/img_admin_singlee"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        app:srcCompat="@drawable/peerwaseem"
+                        android:padding="4dp"
+                        android:layout_centerHorizontal="true"
+                        android:background="@color/labcolor"
+                        android:layout_marginTop="80dp"
+                        android:scaleType="centerCrop"
+
+
+
+                        />
+
+                    <TextView
+                        android:id="@+id/tv_admin_detailss"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/img_admin_singlee"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="5dp"
+                        android:fontFamily="@font/montserrat"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:text="Peerzada Waseem BCA Final Year\n Database  Administrator"
+                        android:textColor="@android:color/black"
+                        android:textSize="12sp" />
+
+
+
+
+
+
+                </RelativeLayout>
+
+
+            </android.support.v7.widget.CardView>
+
+
+
+        </LinearLayout>
+
+    </HorizontalScrollView>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_below="@+id/scroll_view_aboutapp"
+    >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="If You are facing any problem while using this app please drop an email to developer of this Application\nContact Details are Available in Application Admin Section"
+        android:textColor="@android:color/black"
+        android:fontFamily="@font/montserrat"
+        android:background="@color/labcolor"
+        android:gravity="center"
+        android:textSize="10sp"
+        android:id="@+id/tv_prob_face"
+        android:padding="8dp"
+        />
+
+
+    <View
+        android:id="@+id/Hlineee"
+        android:layout_below="@+id/tv_prob_face"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/topcolor"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Version 1.0\nAll Rights Reserved © 2019"
+        android:textColor="@android:color/black"
+        android:fontFamily="@font/montserrat"
+        android:background="@color/labcolor"
+        android:gravity="center"
+        android:textSize="7sp"
+        android:id="@+id/tv_privicy_face"
+        android:padding="4dp"
+        android:layout_below="@+id/tv_prob_face"/>
+
+
+</LinearLayout>
+
+
+
+
+
+</RelativeLayout>

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:padding="3dp"
+    android:background="@color/BgColor"
+    card_view:cardCornerRadius="4dp"
+    card_view:cardElevation="4dp"
+    card_view:cardUseCompatPadding="true">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:id="@+id/notificationr1"
+            android:background="@color/BgColor">
+
+                <ImageView
+                    android:id="@+id/imageViewlogo"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    app:srcCompat="@drawable/logo_gdc"
+                    />
+            <TextView
+                android:id="@+id/tvnoticetitlel"
+                android:layout_width="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/montserrat"
+                android:layout_height="wrap_content"
+                android:text="Govt Degree College Baramulla"
+
+                android:layout_toRightOf="@+id/imageViewlogo"
+                android:textColor="@color/skyblue"
+                android:textSize="12sp"
+                android:gravity="center"/>
+
+                <View
+                    android:id="@+id/Hline"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/skyblue"
+                    android:layout_below="@+id/imageViewlogo"
+
+                    />
+
+
+        </RelativeLayout>
+        <RelativeLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/notificationr1"
+            android:background="@color/BgColor"
+            >
+
+
+                <TextView
+                    android:id="@+id/tvnoticetitlee"
+                    android:layout_width="match_parent"
+                    android:fontFamily="@font/montserrat"
+                    android:layout_height="wrap_content"
+                    android:text="Notice Title"
+                    android:textColor="@android:color/black"
+                    android:textStyle="bold"
+
+                    android:textSize="16sp"
+                    android:gravity="center"/>
+                <TextView
+                    android:id="@+id/tvnoticebodyy"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@android:color/black"
+                    android:fontFamily="@font/montserrat"
+                    android:textSize="14sp"
+                    android:layout_below="@id/tvnoticetitle"
+                    android:gravity="center"/>
+
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+</android.support.v7.widget.CardView>

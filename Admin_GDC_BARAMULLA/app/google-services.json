@@ -1,0 +1,93 @@
+{
+  "project_info": {
+    "project_number": "216362378870",
+    "firebase_url": "https://admingdcbaramulla.firebaseio.com",
+    "project_id": "admingdcbaramulla",
+    "storage_bucket": "admingdcbaramulla.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:216362378870:android:00265c20521d269a",
+        "android_client_info": {
+          "package_name": "com.college.baramulla.govtdegreecollegebaramulla"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "216362378870-bq7o24biqbj7p634a1ie06tm5u40q8ci.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.college.baramulla.govtdegreecollegebaramulla",
+            "certificate_hash": "1793a63e9ba36d1b663abc66c148ff7fba0a8401"
+          }
+        },
+        {
+          "client_id": "216362378870-v381h5lui49l0mu0cb3mp908ecks1gg4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBHCPLTEqXMjPwycePD_BE-VzZ6EiRCMjA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "216362378870-v381h5lui49l0mu0cb3mp908ecks1gg4.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:216362378870:android:7f5b2460cb378397",
+        "android_client_info": {
+          "package_name": "com.example.lovingkashmir.admin_gdc_baramulla"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "216362378870-74dmopisuf0opvpstlgvedoukmlvh9fb.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.lovingkashmir.admin_gdc_baramulla",
+            "certificate_hash": "1a054171daf224bc556ef666366ed5f336b6125c"
+          }
+        },
+        {
+          "client_id": "216362378870-fclui6b9jqimpkjd29tr52avubth1a82.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.lovingkashmir.admin_gdc_baramulla",
+            "certificate_hash": "1793a63e9ba36d1b663abc66c148ff7fba0a8401"
+          }
+        },
+        {
+          "client_id": "216362378870-v381h5lui49l0mu0cb3mp908ecks1gg4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBHCPLTEqXMjPwycePD_BE-VzZ6EiRCMjA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "216362378870-v381h5lui49l0mu0cb3mp908ecks1gg4.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

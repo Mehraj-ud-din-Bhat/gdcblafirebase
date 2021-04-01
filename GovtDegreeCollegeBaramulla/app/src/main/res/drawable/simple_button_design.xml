@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- ripple color -->
+
+<!-- for Button -->
+
+<shape android:shape="rectangle"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <corners android:radius="4dp" />
+    <solid android:color="@color/BgColor"
+        />
+    <stroke
+        android:width="1sp"
+        android:color="@color/color1"/>
+</shape>

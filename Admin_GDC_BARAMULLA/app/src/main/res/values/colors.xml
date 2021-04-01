@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#d84315</color>
+    <color name="colorPrimaryDark">#ccc8c5</color>
+    <color name="colorAccent">#ff7543</color>
+    <color name="color1">#d84315</color>
+    <color name="topcolor">#ccc8c5</color>
+    <color name="color2">#9f0000</color>
+    <color name="color3">#ff7543</color>
+    <color name="BgColor">#e0e0e0</color>
+    <color name="ripplecolor">#d1b098</color>
+    <color name="breakcolor">#ffccbc</color>
+    <color name="labcolor">#ffe0b2</color>
+
+    <color name="skyblue">#558ed5</color>
+    <color name="white_color">#fafafa</color>
+</resources>
